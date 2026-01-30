@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Mesiversario 💙</title>
+
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="app">
+
+  <!-- Background animado -->
+    <canvas id="emoji-bg"></canvas>
+    <div id="bg-overlay"></div>
+
+  <!-- Reproductor de música -->
+    <div class="music-player">
+        <button id="playPause">⏸</button>
+
+        <div class="track-info">
+            <span id="songTitle"></span>
+            <div class="progress-container">
+                <div id="progress"></div>
+            </div>
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <audio id="audio"></audio>
+    </div>
+
+  <!-- Pantallas -->
+    <main id="screens">
+
+    <!-- Pantalla 1 -->
+    <section class="screen active">
+        <h1>Feliz Mesiversario 💙</h1>
+        <div class="hero-img">
+            <img src="assets/gif/gatoKiss.webp" alt="Imagen de aniversario">
+        </div>
+        <p>Toca el botón para continuar! (つ◕‿◕)つ</p>
+        <button class="next">Siguiente</button>
+    </section>
+
+    <!-- Pantalla 2 -->
+    <section class="screen gallery-screen">
+        <h2>Recuerdos del mes 📸</h2>
+        <div class="gallery-scroll">
+            <div class="gallery"></div>
+        </div>
+        <button class="next">Siguiente</button>
+    </section>
+
+    <!-- Pantalla 3 -->
+    <section class="screen center">
+        <div class="mail-icon">💌</div>
+        <strong>Te escribí una carta, mi amor</strong>
+        <button class="next">Siguiente</button>
+    </section>
+
+    <!-- Pantalla 3.1 -->
+    <section class="screen center">
+        <strong>¿Quieres abrirla?</strong>
+        <img src="assets/gif/gatoPls.webp" class="gif">
+        <div class="actions">
+            <button class="open">Chi</button>
+            <button class="nope">No, me caes mal</button>
+        </div>
+    </section>
+
+    <!-- Pantalla 3.2 -->
+    <section class="screen center">
+        <h2>Por qué no la quieres abrir!?😾😿 Intenta de nuevo, pls</h2>
+        <button class="back">Regresar</button>
+    </section>
+
+    <!-- Pantalla 4 -->
+    <section class="screen letter-screen">
+        <h2 class="letter-title">Para ti, mi amor 💕</h2>
+        <div class="letter-paper">
+            <p class="letter-text">Amor, haberte conocido ha llenado mi vida de alegría.
+                Este primer mes a tu lado ha sido un sueño hecho realidad. Cada momento contigo es un tesoro que guardo en mi corazón.
+
+                Espero con ansias todos los meses y años que nos esperan juntos. Te amo más de lo que las palabras pueden expresar.
+
+                Feliz primer mes de novios, mi amor.
+                - Aaron
+            </p>
+        </div>
+
+        <button class="next">Siguiente</button>
+    </section>
+
+    <!-- Final -->
+    <section class="screen center">
+        <h1>✨ 30 · 12 · 2025 ✨</h1>
+        <div class="hero-img">
+            <img src="assets/gif/gatoKiss2.webp" alt="Imagen de aniversario">
+        </div>
+        <button id="restart">Empezar de nuevo</button>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
