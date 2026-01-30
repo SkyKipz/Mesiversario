@@ -33,7 +33,7 @@ photos.forEach(photo => {
 /* Música */
 const playlist = [
   'assets/music/What Makes You Beautiful.mp3',
-  'assets/music/I Want to Write a Song.mp3',
+  'assets/music/I Want to Write You a Song.mp3',
   'assets/music/Golden Hour.mp3'
 ]
 let currentTrack = 0
